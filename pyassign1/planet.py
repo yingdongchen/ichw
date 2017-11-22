@@ -23,7 +23,6 @@ kt.pendown()
 t.shape("circle")
 t.color("red")
 
-
 g=turtle.Turtle()
 g.speed(0)g.penup()
 g.color('green')
@@ -74,5 +73,4 @@ for x in range(0,1000):
   for i in range(13*x,13+13*x):
     l.goto(3.6+403.2*sin(0.1*i),401*cos(0.1*i))
   for i in range(10*x,10+10*x):
-    k.goto(2.1+705*sin(0.1*i),703.2*cos(0.1*i)
-    k.goto(2.112+2463*sin(0.1*i),2460*cos(0.1*i))
+    k.goto(2.1+705*sin(0.1*i),703.2*cos(0.1*i))
