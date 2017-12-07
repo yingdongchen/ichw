@@ -1,3 +1,5 @@
+"""name:Ying Dongchen
+   date:2017/12/7
 """Module for currency exchange
 This module provides several string parsing functions to implement a 
 simple currency exchange routine using an online currency service. 
@@ -46,7 +48,7 @@ def get_number(jihe,amount_from):
         if i.isdigit()==True or i=='.':
            p=p+i
         else:
-           p=p
+           p=
     wanting = float(p[len(str(amount_from)):])
     return wanting
 
@@ -80,13 +82,13 @@ def exchange(currency_from, currency_to, amount_from):
 This module provides several test functions to test if every function in the first module works well.
 The primary function in this module is testAll()"""
 def test_A():
-    """to test the whole exchange function, pass if work well, or break down using ¡®AssertionError"""
+    """to test the whole exchange function, pass if work well, or break down using Â¡Â®AssertionError"""
     assert(exchange('USD','EUR',2.5)==2.0952375) 
     assert(exchange('CNY','AUD',20)==3.8473219279361)
     assert(exchange('KPW','JPY',5)==0.60476986361111)
 
 def test_B():
-    """to test the function get_jstr), pass if work well, or break down using ¡®AssertionError¡¯"""
+    """to test the function get_jstr), pass if work well, or break down using Â¡Â®AssertionErrorÂ¡Â¯"""
     assert(get_jstr('USD','EUR',2.5)=='{ "from" : "2.5 United States Dollars", "to" : "2.0952375 Euros", "success" : true, "error" : "" }')
     assert(get_jstr('CNY','AUD',20)=='{ "from" : "20 Chinese Yuan", "to" : "3.8473219279361 Australian Dollars", "success" : true, "error" : "" }')
     assert(get_jstr('KPW','JPY',5)=='{ "from" : "5 North Korean Won", "to" : "0.60476986361111 Japanese Yen", "success" : true, "error" : "" }')
@@ -94,7 +96,7 @@ def test_B():
 
 
 def test_C():
-    """to test the function get_jstr), pass if work well, or break down using ¡®AssertionError¡¯""" 
+    """to test the function get_jstr), pass if work well, or break down using Â¡Â®AssertionErrorÂ¡Â¯""" 
     assert(get_number('{ "from" : "2.5 United States Dollars", "to" : "2.0952375 Euros", "success" : true, "error" : "" }',2.5)==2.0952375)
     assert(get_number('{ "from" : "20 Chinese Yuan", "to" : "3.8473219279361 Australian Dollars", "success" : true, "error" : "" }',20)==3.8473219279361)
     assert(get_number('{ "from" : "5 North Korean Won", "to" : "0.60476986361111 Japanese Yen", "success" : true, "error" : "" }',5)==0.60476986361111)
@@ -102,7 +104,7 @@ def test_C():
 def testAll():
     """Return all test passed to show everything works well.
     In this testAll, our target is to test all cases
-    pass if work well, or break down using ¡®AssertionError"""
+    pass if work well, or break down using Â¡Â®AssertionError"""
     test_A()
     test_B()
     test_C()
