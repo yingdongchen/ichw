@@ -2,9 +2,9 @@
 
 """wcount.py: count words from an Internet file.
 
-__author__ = "Huang Yang"
-__pkuid__  = "1700011776"
-__email__  = "1700011776@pku.edu.cn"
+__author__ = "Ying Dongchen"
+__pkuid__  = "1700011748"
+__email__  = "1700011748@pku.edu.cn"
 """
 
 import sys
@@ -17,16 +17,16 @@ def wcount(lines, topn=10):
     in reverse order, output the topn (word count), each in one line. 
     """
     lines=lines.lower()
-    x1=re.findall('[a-zA-Z\'\-]+', lines)
-    y1=list(set(x1))
-    y2=[]
-    for i in range(len(y1)):
-        y2+=[x1.count(y1[i])]
+    a=re.findall('[a-zA-Z\'\-]+', lines)
+    b=list(set(a))
+    c=[]
+    for i in range(len(b)):
+        c=c+[a.count(b[i])]
     for i in range(topn):
-        a=y2.index(max(y2))
-        print(y1[a],max(y2))
-        del(y2[a])
-        del(y1[a])
+        q=c.index(max(c))
+        print(b[q],max(c))
+        del(c[q])
+        del(b[q])
 
 if __name__ == '__main__':
 
