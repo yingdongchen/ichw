@@ -33,8 +33,8 @@ def wcount(lines, topn=10):
                 d=d
         p[t]=d
     sorted(p.items(), key=lambda kv:kv[1],reverse=True)
-for key in p:  
-    print(key, p[key])
+    for key in p:  
+        print(key, p[key])
     pass
 
 if __name__ == '__main__':
