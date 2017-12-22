@@ -21,7 +21,7 @@ def wcount(lines, topn=10):
     b=list(set(m))
     c=[]
     for i in range(len(b)):
-        c=c+[a.count(b[i])]
+        c=c+[m.count(b[i])]
     for i in range(topn):
         q=c.index(max(c))
         print(b[q],max(c))
