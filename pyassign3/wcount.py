@@ -27,6 +27,7 @@ def wcount(lines, topn=10):
         print(b[q],max(c))
         del(c[q])
         del(b[q])
+        pass
 
 if __name__ == '__main__':
 
