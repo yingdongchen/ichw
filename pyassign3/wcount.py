@@ -6,6 +6,7 @@ __pkuid__  = "1700011748"
 __email__  = "1700011748@pku.edu.cn"
 """
 
+import string
 import sys
 from urllib.request import urlopen
 
